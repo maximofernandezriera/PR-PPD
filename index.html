@@ -181,6 +181,11 @@
                     </svg>
                     Tarea 1.1: Clip de vídeo incrustado en HTML 5
                 </h2>
+                    <div class="prose max-w-none">
+                    <p class="mb-4">
+                       Elige un clip de vídeo de máximo 20 segundos (puedes crearlo con tu dispositivo móvil, que tenga objetos en detalle y en movimiento) y codifícalo con Avidemux eligiendo el formato y resolución que creas adecuadas para su publicación en web. Teniendo en cuenta que no todos los navegadores aceptan todos los códecs, codifica el vídeo en los formatos necesarios por tal qué sea compatible con el máximo de navegadores posible. Explica las decisiones tomadas en la codificación y el porqué de cada una. Confirma con la herramienta MediaInfo que lo ha codificado a la velocidad que querías.
+                    </p>
+                </div>
                 <div class="prose max-w-none">
                     <p>
                         He grabado un vídeo de 20 segundos, tal como se requiere en el enunciado. El vídeo comienza con elementos estáticos y luego incorpora movimiento.
@@ -394,10 +399,9 @@
                         Publica el fichero .html y el vídeo en un servidor web gratuito o al CDN visto en la PEC1 (web estática) para verlo con una dirección http pública y valora la experiencia a nivel de usuario/a (retraso de visualización, calidad, etc.).
                     </p>
                     <p class="mb-4">
-                        Se han creado dos versiones de la tarea 1.2: un fichero HTML sencillo llamado tarea12.html y la versión completa, ambos accesibles online en website completo y tarea1.2 respectivamente.
-                    </p>
+                        Se han creado un fichero HTML sencillo llamado index.html que unifica todas las preguntas de la práctica, cada pregunta de la practica es accesible mediante un menú.
                     <p class="mb-4">
-                        Para la publicación se empleó GitHub Pages de GitHub.
+                        Para la publicación se empleó <a href="https://maximofernandezriera.github.io/PR-PPD/" target="_blank" rel="noopener" class="text-uoc-blue underline hover:text-uoc-orange">GitHub Pages de GitHub</a>.
                     </p>
                     <p class="mb-4">
                         La reproducción del vídeo en formato MP4, códec H.264 y resolución Full HD se probó exitosamente en el navegador Chrome desde su dirección pública. La reproducción fue fluida y de buena calidad, sin observarse retrasos, parones ni cortes, lo que indica que el formato y la resolución son adecuados.
@@ -508,22 +512,21 @@
                 </h2>
                 <div class="prose max-w-none">
                     <p class="mb-4">
-                        Análisis detallado de la emisión de vídeo utilizando VLC como servidor de streaming.
+                        Genera un clip de vídeo de calidad HD de unos 20 segundos de duración (o descárgalo de la web) que posea movimiento (algo equivalente al clip de fútbol que he usado de ejemplo). Sea cual sea su formato, conviértelo a MP4 con Avidemux con los siguientes valores y lo denominaremos clip01. La codificación de salida será MPEG4 AVC y a VIDEO OUTPUT-CONFIGURACIÓN selecciona como modo de codificación TASA DE BITS MEDIA-DOS PASADAS (para mantener la calidad) y 5000 Kbps. Como formato de audio, MP3 (lame) y como contenedor, MKV. Incluye estos clips en la entrega de la práctica. Confirma con MediaInfo que Avidemux ha realizado el trabajo correctamente.
                     </p>
                     
                     <div class="bg-gray-50 rounded-lg shadow-md p-6 mt-6">
                         <h3 class="text-xl font-bold text-uoc-blue mb-4">Configuración de emisión</h3>
-                        <p class="mb-4">
-                            Para la emisión de vídeo se utilizó VLC como servidor, configurado para transmitir a través del protocolo RTP (Real-time Transport Protocol) a la dirección IP local 127.0.0.1 en el puerto 5000.
+                         <p class="mb-4">
+                        Primero, el vídeoclip se puede descagar aquí: <a href="https://github.com/maximofernandezriera/PR-PPD/blob/main/clip01.mp4" target="_blank" rel="noopener" class="text-uoc-blue underline hover:text-uoc-orange">clip01.mp4</a>
+                        </p>
+                       <p class="mb-4">
+                        A continuación se muestra la información detallada del vídeo procesado, obtenida con MediaInfo.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                             <div>
-                                <img src="images/emision.png" alt="Interfaz de emisión de VLC" class="rounded-lg shadow-md">
-                                <p class="text-sm mt-2 text-gray-600">Interfaz de emisión de VLC mostrando la reproducción del vídeo</p>
-                            </div>
-                            <div>
-                                <img src="images/estadisticasemisor.png" alt="Estadísticas del emisor" class="rounded-lg shadow-md">
-                                <p class="text-sm mt-2 text-gray-600">Estadísticas de emisión mostrando parámetros de rendimiento</p>
+                                <img src="mediainfo2.png" alt="Comprobación de la información del vídeo procesado" class="rounded-lg shadow-md">
+                                <p class="text-sm mt-2 text-gray-600">Interfaz de MediaInfo mostrando la información del vídeo procesado.</p>
                             </div>
                         </div>
                     </div>
